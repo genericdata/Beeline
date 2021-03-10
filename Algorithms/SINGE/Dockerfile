@@ -55,3 +55,6 @@ RUN tag=v0.4.1 && \
 #    wget --quiet https://www.biostat.wisc.edu/~gitter/tmp/$md5/code.md5 && \
 #    chmod u+x SINGE_* && \
 #    mv SINGE_Test tests/SINGE_Test
+
+# Change made to allow singularity compatibility.
+RUN chmod -R 777 /usr/local/SINGE
